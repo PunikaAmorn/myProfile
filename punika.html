@@ -108,78 +108,87 @@
 		</div>
 	</div>
 	<div class="right-side col-md-8  col-sm-8  col-xs-12">
-			<div class="header-name">
-				<p class="header-text">Punika Amornwatee</p> 
+		<div class="header-name">
+			<p class="header-text">Punika Amornwatee</p> 
+		</div>
+		<p class="address">Address 237 Bandomtoom Road Banpong Ratchaburi 70110</p>
+		
+		<div class="info-block">
+			<div class="info-header">
+				Education
+				<div class="underline"></div>
 			</div>
-			<p class="address">Address 237 Bandomtoom Road Banpong Ratchaburi 70110</p>
-			
-			<div class="info-block">
-				<div class="info-header">
-					Education
-					<div class="underline"></div>
-				</div>
-				<table class="info-text">
-					<tr>
-					<td class="date">1996 - 2004</td><td> Udomwittaya School</td>
-					</tr>
-					<tr>
-					<td class="date">2005 - 2010</td><td> Kanjanapisek Wittayalai Nakhon Pathom School</td>
-					</tr>
-					<tr>
-					<td class="date">2011 - 2014</td><td> Silpakorn University</td>
-					</tr>
+			<table class="info-text">
+				<tr>
+				<td class="date">1996 - 2004</td><td> Udomwittaya School</td>
+				</tr>
+				<tr>
+				<td class="date">2005 - 2010</td><td> Kanjanapisek Wittayalai Nakhon Pathom School</td>
+				</tr>
+				<tr>
+				<td class="date">2011 - 2014</td><td> Silpakorn University</td>
+				</tr>
 
-				</table>
+			</table>
+		</div>
+		<div class="info-block">
+			<div class="info-header">
+				Experience 
+				<div class="underline"></div>
 			</div>
-			<div class="info-block">
-				<div class="info-header">
-					Experience 
-					<div class="underline"></div>
-				</div>
-				<table class="info-text">
-					<tr>
-					<td class="date">17 March - 21 May 2014</td><td> Apprentice at Nung Song Sum Animator Department</td>
-					</tr>
-					<tr>
-					<td class="date">23 August 2015 - Now</td><td> The Monk Studio Department Pipeline Programmer</td>
-					</tr>
-				</table>
+			<table class="info-text">
+				<tr>
+				<td class="date">17 March - 21 May 2014</td><td> Apprentice at Nung Song Sum Animator Department</td>
+				</tr>
+				<tr>
+				<td class="date">23 August 2015 - Now</td><td> The Monk Studio Department Pipeline Programmer</td>
+				</tr>
+			</table>
+		</div>
+		<div class="info-block">
+			<div class="info-header">
+				Activity 
+				<div class="underline"></div>
 			</div>
-			<div class="info-block">
-				<div class="info-header">
-					Activity 
-					<div class="underline"></div>
-				</div>
-				<table class="info-text">
-					<tr>
-					<td class="date">2011 </td><td> Honorable Mention Award from Digital Learning Content 3</td>
-					</tr>
-					<tr>
-					<td class="date">2013 </td><td> Second Best Award from Good Game Developer Projects 2013</td>
-					</tr>
-					<tr>
-					<td class="date">2015 </td><td> Second Best Award from Animation Spirit of young Blood Donor 2014</td>
-					</tr>
-				</table>
+			<table class="info-text">
+				<tr>
+				<td class="date">2011 </td><td> Honorable Mention Award from Digital Learning Content 3</td>
+				</tr>
+				<tr>
+				<td class="date">2013 </td><td> Second Best Award from Good Game Developer Projects 2013</td>
+				</tr>
+				<tr>
+				<td class="date">2015 </td><td> Second Best Award from Animation Spirit of young Blood Donor 2014</td>
+				</tr>
+			</table>
+		</div>
+		<div class="info-block">
+			<div class="info-header">
+				Web Programing Skill 
+				<div class="underline"></div>
 			</div>
-			<div class="info-block">
-				<div class="info-header">
-					Web Programing Skill 
-					<div class="underline"></div>
-				</div>
-				<div class="row info-text" style="margin:2vh auto;display:block;">
-					<div class="col-xs-6 col-sm-3"><div class="skill-scale"><div class="scale">HTML<br>90%</div></div></div>
-					<div class="col-xs-6 col-sm-3"><div class="skill-scale"><div class="scale">Javascript<br>85%</div></div></div>
-					<div class="col-xs-6 col-sm-3"><div class="skill-scale"><div class="scale">CSS<br>80%</div></div></div>
-					<div class="col-xs-6 col-sm-3"><div class="skill-scale"><div class="scale">PHP<br>75%</div></div></div>
-				</div>
+			<div class="row info-text" style="margin:2vh auto;display:block;">
+				<div class="col-xs-6 col-sm-3"><div class="skill-scale" id="HTML"><div class="scale">HTML<br>90%</div></div></div>
+				<div class="col-xs-6 col-sm-3"><div class="skill-scale" id="Javascript"><div class="scale">Javascript<br>85%</div></div></div>
+				<div class="col-xs-6 col-sm-3"><div class="skill-scale" id="CSS"><div class="scale">CSS<br>80%</div></div></div>
+				<div class="col-xs-6 col-sm-3"><div class="skill-scale" id="PHP"><div class="scale">PHP<br>75%</div></div></div>
 			</div>
-			
-
-			
+		</div>			
 	</div>
 </div>
 
 
 </body>
+	<script >
+		$(document).ready(function(){
+			var scale = {'HTML':((0.9*360)-90),'Javascript':(360*0.85-90),'CSS':(360*0.8-90),'PHP':(360*0.75-90)};
+			setTimeout(function(){
+				for(var key in scale){
+					$("#"+key).css('background-image' , 'linear-gradient(' + (scale[key]) + 'deg, transparent 50%, #4f647d 50%),linear-gradient(90deg, #8f918e 50%, transparent 50%)');
+					
+				}
+			},1);
+		}); 
+
+	</script>
 </html>
