@@ -235,7 +235,7 @@ td.date{
 	}
 }
 
-@media screen and (min-height: 800px) {
+@media screen and (min-height:785px) {
 	.row.main{
 		height:100vh;
 	}
