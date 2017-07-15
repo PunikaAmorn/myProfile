@@ -37,9 +37,9 @@ p,div{
 	margin:5vh auto;
 	max-width:200px;
     -webkit-animation-name: pop; 
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
     animation-name:pop;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
 }
 .underline{
 	background-color:#313e4e;
