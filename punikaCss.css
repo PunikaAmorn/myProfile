@@ -255,13 +255,13 @@ td.date{
 @-webkit-keyframes side-left {
     0%   {position:absolute; opacity:0;margin-left:-300px; }
 	25%	 { opacity:1; }
-    100% {margin-left:0px;}
+    100% {margin-left:6.5vw;}
 }
 
 @keyframes side-left {
     0%   {position:absolute; opacity:0;margin-left:-300px;}
 	25%	 {opacity:1; }
-    100% {margin-left:0px;}
+    100% {margin-left:6.5vw;}
 }
 
 
