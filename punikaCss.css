@@ -5,7 +5,12 @@ p,div{
 	font-family: 'Fjalla One', sans-serif;
 	font-size:14px;
 }
-
+.row.main{
+	height:100vh;
+}
+.info-text > .col-sm-3{
+	margin-top:20px;
+}
 .left-side{
 	background-color:#313e4e;
 	height:100%;
@@ -244,7 +249,7 @@ td.date{
 @-webkit-keyframes side-left {
     0%   {position:absolute; opacity:0;margin-left:-300px; }
 	25%	 { opacity:1; }
-    100% {margin-left:auto;}
+    100% {margin-left:0px;}
 }
 
 @keyframes side-left {
