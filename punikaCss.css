@@ -6,7 +6,7 @@ p,div{
 	font-size:14px;
 }
 .row.main{
-	height:100vh;
+	height:100%;
 }
 .info-text > .col-sm-3{
 	margin-top:20px;
@@ -232,6 +232,12 @@ td.date{
 		width: 30vw;
 		height: 30vw;
 		font-size:18px;
+	}
+}
+
+@media screen and (min-height: 800px) {
+	.row.main{
+		height:100vh;
 	}
 }
 
